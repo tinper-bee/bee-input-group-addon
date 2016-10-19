@@ -3,15 +3,34 @@
 [![Build Status](https://img.shields.io/travis/tinper-bee/generator-tinper-bee/master.svg)](https://travis-ci.org/tinper-bee/bee-input-group-addon)
 [![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-input-group-addon.svg)](https://david-dm.org/tinper-bee/bee-input-group-addon#info=devDependencies)
 
+InputGroupAddon 作为FormControl的边标签容器存在
 
-react bee-input-group-addon component for tinper-bee
 
-some description...
+## 使用
 
-## 使用方法
-
+使用单独的bee-input-group-addon包
+#### 组件引入
+先进行下载bee-input-group-addon包
+```
+npm install --save bee-input-group-addon
+```
+组件调用
 ```js
-
+import InputGroupAddon from 'bee-input-group-addon';
+React.render(<div>
+    <InputGroupAddon/>
+</div>, document.getElementById('target'));
+```
+#### 样式引入
+- 可以使用link引入dist目录下bee-input-group-addon.css
+```
+<link rel="stylesheet" href="./node_modules/build/bee-input-group-addon.css">
+```
+- 可以在js中import样式
+```js
+import "./node_modules/src/InputGroupAddon.scss"
+//或是
+import "./node_modules/build/bee-input-group-addon.css"
 ```
 
 

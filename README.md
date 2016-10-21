@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/travis/tinper-bee/generator-tinper-bee/master.svg)](https://travis-ci.org/tinper-bee/bee-input-group-addon)
 [![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-input-group-addon.svg)](https://david-dm.org/tinper-bee/bee-input-group-addon#info=devDependencies)
 
-InputGroupAddon 作为FormControl的边标签容器存在
+InputGroupAddon 作为FormControl的边标签容器存在,修饰补充FormControl.比如文字说明，货币说明。
 
 
 ## 使用

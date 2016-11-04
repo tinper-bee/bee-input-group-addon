@@ -5,8 +5,7 @@ class Demo extends Component {
 	render(){
 		return( 
 			<div>
-				<InputGroupAddon/> 
-				<InputGroupAddon/> 
+				<InputGroupAddon>I am InputGroupAddon</InputGroupAddon> 
 			</div>
 		)
 	}

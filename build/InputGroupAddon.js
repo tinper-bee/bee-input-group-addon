@@ -26,6 +26,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
 
+var defaultProps = {
+  clsPrefix: 'u-input-group-addon'
+};
+
 var InputGroupAddon = function (_React$Component) {
   _inherits(InputGroupAddon, _React$Component);
 
@@ -38,33 +42,18 @@ var InputGroupAddon = function (_React$Component) {
   InputGroupAddon.prototype.render = function render() {
     var _props = this.props;
     var className = _props.className;
+    var clsPrefix = _props.clsPrefix;
 
-    var others = _objectWithoutProperties(_props, ['className']);
+    var others = _objectWithoutProperties(_props, ['className', 'clsPrefix']);
 
-    var classes = {
-      'input-group-addon': true
-    };
     return _react2["default"].createElement('span', _extends({}, others, {
-      className: (0, _classnames2["default"])(className, classes)
+      className: (0, _classnames2["default"])(className, clsPrefix)
     }));
   };
 
   return InputGroupAddon;
 }(_react2["default"].Component);
 
+InputGroupAddon.defaultProps = defaultProps;
 exports["default"] = InputGroupAddon;
-module.exports = exports['default'];
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _InputGroupAddon = require('./InputGroupAddon');
-
-var _InputGroupAddon2 = _interopRequireDefault(_InputGroupAddon);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-exports["default"] = _InputGroupAddon2["default"];
 module.exports = exports['default'];

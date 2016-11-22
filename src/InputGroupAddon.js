@@ -1,21 +1,21 @@
 import classNames from 'classnames';
 import React from 'react';
 
+const defaultProps = {
+  clsPrefix: 'u-input-group-addon'
+}
 
 class InputGroupAddon extends React.Component {
   render() {
-    const { className, ...others } = this.props;
+    const { className,clsPrefix, ...others } = this.props;
 
-    let classes = {
-    	'input-group-addon' : true
-    }
     return (
       <span
         {...others}
-        className={classNames(className, classes)}
+        className={classNames(className, clsPrefix)}
       />
     );
   }
 }
-
+InputGroupAddon.defaultProps = defaultProps;
 export default InputGroupAddon;

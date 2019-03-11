@@ -40,11 +40,10 @@ var InputGroupAddon = function (_React$Component) {
   }
 
   InputGroupAddon.prototype.render = function render() {
-    var _props = this.props;
-    var className = _props.className;
-    var clsPrefix = _props.clsPrefix;
-
-    var others = _objectWithoutProperties(_props, ['className', 'clsPrefix']);
+    var _props = this.props,
+        className = _props.className,
+        clsPrefix = _props.clsPrefix,
+        others = _objectWithoutProperties(_props, ['className', 'clsPrefix']);
 
     return _react2["default"].createElement('span', _extends({}, others, {
       className: (0, _classnames2["default"])(className, clsPrefix)
